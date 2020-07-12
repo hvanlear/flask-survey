@@ -52,3 +52,6 @@ surveys = {
     "satisfaction": satisfaction_survey,
     "personality": personality_quiz,
 }
+
+# In [13]:  satisfaction_survey.questions[2].choices                                                                                   
+# Out[13]: ['Less than $10,000', '$10,000 or more']

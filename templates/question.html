@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+
+<p>{{ question }}</p>
+
+<form action="/sat_surv/question/{{ next_question }}" method="POST">
+  {% for choice in choices %}
+  <p>
+    {{ choice }} :
+    <input
+      type="checkbox"
+      name="choice"
+      value="question:{{ question_num }} choice:{{ choice }}"
+      id=""
+    />
+  </p>
+  {% endfor %}
+  <button>Next Question</button>
+</form>
+
+<p>{{ next_quetsion }}</p>
+{% endblock %}
